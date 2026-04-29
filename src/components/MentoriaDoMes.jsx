@@ -1,58 +1,147 @@
 // src/components/MentoriaDoMes.jsx
-import React from 'react';
-import { FiCheckCircle } from 'react-icons/fi'; // Importando o ícone
+import React from "react";
+import { FiCheckCircle } from "react-icons/fi";
 
 function MentoriaDoMes() {
-  const numeroWhatsApp = "5511999999999"; 
+  const numeroWhatsApp = "5519998296204";
   const linkWhats = `https://wa.me/${numeroWhatsApp}?text=${encodeURI("Olá! Gostaria de saber mais sobre a Mentoria do Mês.")}`;
 
   return (
-    <section id="mentoria-do-mes" style={{ backgroundColor: 'var(--cor-primaria)', color: 'var(--cor-texto-claro)' }}>
+    <section
+      id="mentoria-do-mes"
+      style={{
+        backgroundColor: "var(--cor-primaria)",
+        color: "var(--cor-texto-claro)",
+        padding: "60px 0",
+      }}
+    >
       <div className="container">
-        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--cor-secundaria)' }}>Mentoria do Mês</h2>
+        <div style={{ textAlign: "center", marginBottom: "40px" }}>
+          <h2 style={{ fontSize: "2.5rem", color: "var(--cor-secundaria)" }}>
+            Mentoria do Mês
+          </h2>
         </div>
 
         {/* CARDS DE DOR */}
         <div className="cards-grid">
-          <div className="card-dor" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', color: 'var(--cor-texto-claro)' }}>
-            "Você sente que cada mês mexe com você de um jeito diferente e nem sempre entende o porquê?"
+          <div
+            className="card-dor"
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              color: "var(--cor-texto-claro)",
+            }}
+          >
+            "Você sente que cada mês mexe com você de um jeito diferente e nem
+            sempre entende o porquê?"
           </div>
-          <div className="card-dor" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', color: 'var(--cor-texto-claro)' }}>
-            "Está vivendo um período confuso e quer mais clareza sobre o seu momento?"
+          <div
+            className="card-dor"
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              color: "var(--cor-texto-claro)",
+            }}
+          >
+            "Está vivendo um período confuso e quer mais clareza sobre o seu
+            momento?"
           </div>
-          <div className="card-dor" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', color: 'var(--cor-texto-claro)' }}>
-            "Sente que se cobra demais sem entender o que esse ciclo está te ensinando?"
+          <div
+            className="card-dor"
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              color: "var(--cor-texto-claro)",
+            }}
+          >
+            "Sente que se cobra demais sem entender o que esse ciclo está te
+            ensinando?"
           </div>
-          <div className="card-dor" style={{ backgroundColor: 'rgba(255, 255, 255, 0.05)', color: 'var(--cor-texto-claro)' }}>
-            "Deseja viver o seu ciclo com mais consciência, direção e menos ansiedade?"
+          <div
+            className="card-dor"
+            style={{
+              backgroundColor: "rgba(255, 255, 255, 0.05)",
+              color: "var(--cor-texto-claro)",
+            }}
+          >
+            "Deseja viver o seu ciclo com mais consciência, direção e menos
+            ansiedade?"
           </div>
         </div>
 
-        {/* TEXTO DE SOLUÇÃO */}
-        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <p style={{ fontSize: '1.2rem', marginTop: '10px' }}>
-              Um mês vivido com consciência é muito diferente de um mês vivido no automático.
+        {/* TEXTO DE SOLUÇÃO REESTRUTURADO */}
+        <div
+          style={{
+            maxWidth: "850px",
+            margin: "0 auto",
+            textAlign: "center",
+            lineHeight: "1.6",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "1.4rem",
+              color: "var(--cor-secundaria)",
+              fontWeight: "500",
+              marginBottom: "30px",
+            }}
+          >
+            A Mentoria do Mês é como um passo a passo de clareza emocional e
+            energética para o ciclo que você está vivendo.
+          </p>
+
+          <div style={{ marginBottom: "30px", opacity: "0.9" }}>
+            <p>
+              Muitas vezes, você sente ansiedade, confusão, peso emocional ou um
+              impulso para agir que não consegue explicar. A maior dificuldade
+              não é só sentir tudo isso...{" "}
+              <strong>É não entender o porquê.</strong>
             </p>
           </div>
-          <p style={{ marginBottom: '20px' }}>
-            A Mentoria do Mês é um acompanhamento pensado para te ajudar a compreender a energia do seu ciclo atual, os desafios do período e as tendências mais importantes do seu mês.
-          </p>
-          
-          <h3 style={{ marginBottom: '15px', fontSize: '1.5rem', color: 'var(--cor-secundaria)', marginTop: '30px' }}>Com ela, você tem direcionamento para entender:</h3>
-          
-          {/* LISTA COM ÍCONES REAIS */}
-          <ul className="lista-beneficios" style={{ textAlign: 'left', display: 'inline-block' }}>
-            <li><FiCheckCircle className="icone-lista" /> A energia do seu mês e como ele se conecta com seu ano pessoal</li>
-            <li><FiCheckCircle className="icone-lista" /> Os desafios e aprendizados do período</li>
-            <li><FiCheckCircle className="icone-lista" /> As tendências das semanas</li>
-            <li><FiCheckCircle className="icone-lista" /> O que pede mais atenção no emocional, no energético e no prático</li>
-          </ul>
 
-          <div style={{ marginTop: '30px' }}>
-            <p style={{ fontStyle: 'italic', marginBottom: '20px' }}>Seu mês pode ser mais leve quando você entende o que ele está te pedindo.</p>
-            <a href={linkWhats} className="botao-whatsapp" target="_blank" rel="noopener noreferrer">
+          <div
+            style={{
+              padding: "25px",
+              borderLeft: "2px solid var(--cor-secundaria)",
+              backgroundColor: "rgba(255,255,255,0.02)",
+              marginBottom: "30px",
+              textAlign: "left",
+            }}
+          >
+            <p style={{ marginBottom: "15px" }}>
+              Na mentoria, eu te ajudo a compreender a energia do seu mês, das
+              semanas e até dos dias mais importantes.
+            </p>
+            <p>
+              É como um <strong>mapa prático de direcionamento</strong>, para
+              que você pare de se perder nas emoções e comece a entender melhor
+              o seu próprio momento.
+            </p>
+          </div>
+
+          <p style={{ marginBottom: "40px" }}>
+            Quando você entende o ciclo que está vivendo, consegue se acolher
+            mais, se cobrar menos e agir com muito mais consciência.
+          </p>
+
+          {/* TRANSFORMAÇÃO FINAL */}
+          <div style={{ marginBottom: "50px" }}>
+            <p style={{ fontSize: "1.2rem", margin: "5px 0" }}>
+              A Mentoria do Mês ajuda a transformar{" "}
+              <strong>confusão em clareza</strong>.
+            </p>
+            <p style={{ fontSize: "1.2rem", margin: "5px 0" }}>
+              <strong>Peso em entendimento.</strong>
+            </p>
+            <p style={{ fontSize: "1.2rem", margin: "5px 0" }}>
+              E <strong>intensidade em direção.</strong>
+            </p>
+          </div>
+
+          <div style={{ marginTop: "10px" }}>
+            <a
+              href={linkWhats}
+              className="botao-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Receba direcionamento para o seu mês
             </a>
           </div>
