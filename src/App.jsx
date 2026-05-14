@@ -20,11 +20,10 @@ function App() {
         {/* CABEÇALHO / MENU REFINADO */}
         <header
           style={{
-            background:
-              "linear-gradient(90deg, #02060d 0%, var(--cor-primaria) 100%)" /* Degradê sofisticado */,
-            borderBottom:
-              "1px solid rgba(212, 175, 55, 0.3)" /* Linha dourada sutil */,
-            padding: "30px 50px",
+            background: "linear-gradient(90deg, #02060d 0%, var(--cor-primaria) 100%)",
+            borderBottom: "1px solid rgba(212, 175, 55, 0.3)",
+            // Troque o padding de "30px 50px" por este:
+            padding: "clamp(15px, 4vw, 30px) clamp(15px, 5vw, 50px)",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
@@ -35,7 +34,7 @@ function App() {
         >
           <div
             style={{
-              fontSize: "2rem",
+              fontSize: "1.8rem",
               fontWeight: "bold",
               fontFamily: "Playfair Display",
               letterSpacing: "2px",
@@ -52,11 +51,12 @@ function App() {
           <nav
             style={{
               display: "flex",
-              gap: "30px",
+              gap: "clamp(10px, 3vw, 30px)",
               fontFamily: "Montserrat",
-              fontSize: "1.2rem",
+              fontSize: "clamp(0.9rem, 2vw, 1rem)",
               flexWrap: "wrap",
               fontWeight: "600",
+              justifyContent: "center",
             }}
           >
             <Link
@@ -152,15 +152,15 @@ function App() {
           <p style={{ marginTop: "20px", fontSize: "0.8rem", opacity: 0.7 }}>
             © 2026 Ju Lackner - Todos os direitos reservados.
           </p>
-          <p style={{ marginTop: "20px", fontSize: "0.8rem", opacity: 0.7 }}>
+          <p style={{ marginTop: "32px", fontSize: "0.8rem", opacity: 0.7 }}>
             Desenvolvido por{" "}
             <a
-              href="https://seusite.com.br"
+              href="https://wa.me/5519982046473"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "inherit", textDecoration: "underline" }}
+              style={{ color: "inherit", textDecoration: "none" }}
             >
-              Aline Lombardi
+              Aline Lombardi Fernandes
             </a>
           </p>
         </footer>

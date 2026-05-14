@@ -22,21 +22,21 @@ function Hero() {
     },
     {
       id: 2,
-      titulo: "Mentoria do Mês",
-      descricao:
-        "Um passo a passo de clareza emocional e energética. Transforme confusão em entendimento e intensidade em direção para o seu ciclo atual.",
-      textoBotao: "Receba direcionamento",
-      link: "#mentoria-do-mes", // Exemplo de link que rola a página para a seção
-      imagem: imagemMentoria,
-    },
-    {
-      id: 3,
       titulo: "Mapa da Prosperidade",
       descricao:
         "Entenda a sua energia numerológica para desbloquear caminhos financeiros e ativar a abundância na sua vida profissional.",
       textoBotao: "Ative sua prosperidade",
       link: "/mapa-da-prosperidade",
       imagem: imagemProsperidade,
+    },
+    {
+      id: 3,
+      titulo: "Mentoria do Mês",
+      descricao:
+        "Um passo a passo de clareza emocional e energética. Transforme confusão em entendimento e intensidade em direção para o seu ciclo atual.",
+      textoBotao: "Receba direcionamento",
+      link: "#mentoria-do-mes", // Exemplo de link que rola a página para a seção
+      imagem: imagemMentoria,
     },
   ];
 
@@ -102,7 +102,7 @@ function Hero() {
           >
             <h1
               style={{
-                fontSize: "3.8rem",
+                fontSize: "clamp(2rem, 8vw, 3.8rem)",
                 color: "var(--cor-secundaria)",
                 marginBottom: "20px",
                 lineHeight: "1.2",
@@ -114,7 +114,7 @@ function Hero() {
 
             <p
               style={{
-                fontSize: "1.4rem",
+                fontSize: "clamp(1rem, 4vw, 1.4rem)",
                 marginBottom: "50px",
                 fontFamily: "Montserrat",
                 fontWeight: "300",
